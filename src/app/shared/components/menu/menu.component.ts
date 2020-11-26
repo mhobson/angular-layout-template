@@ -36,7 +36,17 @@ export class MenuComponent implements OnInit {
           },
           {
             label: 'Relatórios',
-            icon: 'pi pi-fw pi-file-pdf'
+            icon: 'pi pi-fw pi-file-pdf',
+            items: [
+              {
+                label: 'Pedidos por cliente',
+                icon: 'pi pi-fw pi-file-pdf'
+              },
+              {
+                label: 'Contratos por cliente',
+                icon: 'pi pi-fw pi-file-pdf'
+              }
+            ]
           },
 
         ]
@@ -46,32 +56,28 @@ export class MenuComponent implements OnInit {
         icon: 'pi pi-fw pi-users',
         items: [
           {
-            label: 'New',
-            icon: 'pi pi-fw pi-user-plus',
+            label: 'Ficha funcional',
+            icon: 'pi pi-fw pi-user-edit',
 
           },
           {
-            label: 'Delete',
-            icon: 'pi pi-fw pi-user-minus',
+            label: 'Transferências',
+            icon: 'pi pi-fw pi-sort-alt',
 
           },
           {
-            label: 'Search',
-            icon: 'pi pi-fw pi-users',
+            label: 'Relatórios',
+            icon: 'pi pi-fw pi-file-pdf',
             items: [
               {
-                label: 'Filter',
-                icon: 'pi pi-fw pi-filter',
-                items: [
-                  {
-                    label: 'Print',
-                    icon: 'pi pi-fw pi-print'
-                  }
-                ]
+                label: 'Aniversariantes',
+                icon: 'pi pi-fw pi-file-pdf'
+
               },
               {
-                icon: 'pi pi-fw pi-bars',
-                label: 'List'
+                label: 'Listagem de funcionários',
+                icon: 'pi pi-fw pi-file-pdf'
+
               }
             ]
           }
@@ -82,27 +88,30 @@ export class MenuComponent implements OnInit {
         icon: 'pi pi-fw pi-money-bill',
         items: [
           {
-            label: 'Edit',
-            icon: 'pi pi-fw pi-pencil',
-            items: [
-              {
-                label: 'Save',
-                icon: 'pi pi-fw pi-calendar-plus'
-              },
-              {
-                label: 'Delete',
-                icon: 'pi pi-fw pi-calendar-minus'
-              },
-
-            ]
+            label: 'Contas a pagar',
+            icon: 'pi pi-fw pi-window-maximize'
           },
           {
-            label: 'Archieve',
-            icon: 'pi pi-fw pi-calendar-times',
+            label: 'Contas a receber',
+            icon: 'pi pi-fw pi-window-minimize'
+          },
+          {
+            label: 'Fluxo de Caixa',
+            icon: 'pi pi-fw pi-chart-line'
+          },
+          {
+            label: 'Relatórios',
+            icon: 'pi pi-fw pi-file-pdf',
             items: [
               {
-                label: 'Remove',
-                icon: 'pi pi-fw pi-calendar-minus'
+                label: 'Contas a pagar',
+                icon: 'pi pi-fw pi-file-pdf'
+
+              },
+              {
+                label: 'Contas a receber',
+                icon: 'pi pi-fw pi-file-pdf'
+
               }
             ]
           }
