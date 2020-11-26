@@ -1,0 +1,27 @@
+.mh-sidebar {
+	position: fixed;
+	top: 50px;
+	left: 0;
+	bottom: 0;
+	width: 210px;
+	margin-left: -211px;
+	z-index:9997;
+	transition: margin-left 0.5s;
+	overflow-y: auto;
+	
+	background-color: #f6f6f6;
+	border-right: 1px solid #eaeaea;
+}
+
+.mh-sidebar.is-toggled {
+	margin-left: 0;
+}
+
+@media (min-width: 960px) {
+	.mh-sidebar {
+		margin-left: 0;
+	}
+	.mh-sidebar.is-toggled {
+		margin-left: -211px;
+	}
+}

@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+/**
+ You can add global styles to this file, and also import other style files */
+
+body {
+	margin: 0;
+	font-size: 13px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* CONTENT */
+.mh-content {
+	padding: 0 15px;
+	margin-top: 50px;
+	transition: margin-left 0.5s;
+}
+
+@media (min-width: 960px) {
+	.mh-content {
+		margin-left: 210px;
+	}
+	.mh-content.is-toggled {
+		margin-left: 0;
+	}
+}
+
+/* PAGE-TITLE */
+.mh-page-title {
+	padding: 20px 0;
+	
+	font-size: 1.5em;
+	color: #373737;
+}
+
+/* CUSTOMIZING PRIMENG MENU */
+.p-slidemenu {
+  background: none;
+  border: none;
+}
+
+.p-slidemenu .p-slidemenu-content {
+  overflow-x: unset !important;
+  overflow-y: unset !important;
+}
+
+.p-slidemenu-backward span{
+  margin-left: 5px;
+}
